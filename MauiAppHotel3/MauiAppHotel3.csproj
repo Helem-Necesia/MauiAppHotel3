@@ -57,9 +57,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Views\Galeria.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="Views\Galeria.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Fonts\PTSans-Bold.ttf" />
 	  <None Remove="Resources\Fonts\PTSans-Italic.ttf" />
 	  <None Remove="Resources\Fonts\PTSans-Regular.ttf" />
+	  <None Remove="Resources\Images\banheiro.jpg" />
+	  <None Remove="Resources\Images\quarto.jpg" />
+	  <None Remove="Resources\Images\sacada.jpeg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -73,6 +84,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\HospedagemContratada.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\NossoEspaco.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

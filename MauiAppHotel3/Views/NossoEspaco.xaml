@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel3.Views.NossoEspaco"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Chocolate">
+
+
+    <VerticalStackLayout>
+        <Label Text="Nosso espaço"
+           TextColor="White"
+           FontSize="35"
+           FontFamily="PTSansItalic"
+           HorizontalTextAlignment="Center" 
+           BackgroundColor="Brown"
+           Padding="5"/>
+
+        <Grid>
+            <VerticalStackLayout VerticalOptions="CenterAndExpand">
+                <Image Source="quarto.jpg"
+           WidthRequest="250"
+           HeightRequest="200"/>
+
+                <Label Text="----- Aqui, o conforto é garantido! -----"
+       TextColor="Bisque"
+       FontSize="20"
+       FontFamily="PTSansItalic"
+       HorizontalTextAlignment="Center"/>
+
+
+                <Image Source="banheiro.jpg"
+            WidthRequest="250"
+            HeightRequest="220"/>
+
+
+                
+                <Button Text="Voltar"
+                        HorizontalOptions="Center"
+                        BackgroundColor="Brown"
+                        Clicked="Button_Clicked"/>
+
+            </VerticalStackLayout>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
